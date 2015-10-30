@@ -1,0 +1,35 @@
+<html>
+
+  <head>
+    <title><%= @title %></title>
+    <link href="css/my_site.css" rel="stylesheet">
+  </head>
+
+<div class="site">
+    <%= yield %>
+
+    <div class="sidebar">
+      <!-- <p>
+        <%# put the awesome quotes stuff here to be random %>
+      </p> -->
+      <nav>
+          <a href="index">Home</a>
+          <a href="about_me">All About Lauren</a>
+          <a href="blog">Blog</a>
+          <a href="projects">Projects</a>
+      </nav>
+      <div id="follow">
+        <i>follow me:
+        <a href="http://twitter.com/bumbbles21">Twitter</a>
+        <a href="http://instagram.com/pennypeachesthepit">Penny's Instagram</a>
+        <a href="http://pinterest.com/bumbbles21">Pinterest</a>
+        </i>
+      </div>
+    </div>
+
+    <div class="footer">
+      <%= "Blog of Awesome | copyright #{Time.now.year}"%>
+    </div>
+
+  </div>
+</html>

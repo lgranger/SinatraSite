@@ -18,7 +18,7 @@ The requirements for this wave are:
     - Feel free to use some of the static HTML pages made for the previous exercise
   - At least **one** of the static pages must include at least **two** images
 
-## Wave 2: Use CSS to apply style and struture to our website
+## Wave 2: Use CSS to apply style and structure to our website
 
 The requirements for this wave are:
 - Add `class` and/or `id` attributes to your html tags where appropriate
