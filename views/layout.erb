@@ -2,22 +2,23 @@
 
   <head>
     <title><%= @title %></title>
-    <link href="css/my_site.css" rel="stylesheet">
+    <link href="/css/my_site.css" rel="stylesheet">
   </head>
 
 <div class="site">
     <%= yield %>
 
     <div class="sidebar">
-      <!-- <p>
-        <%# put the awesome quotes stuff here to be random %>
-      </p> -->
       <nav>
-          <a href="index">Home</a>
-          <a href="about_me">All About Lauren</a>
-          <a href="blog">Blog</a>
-          <a href="projects">Projects</a>
+          <a href="/index">Home</a>
+          <a href="/about_me">All About Lauren</a>
+          <a href="/blog">Blog</a>
+          <a href="/projects">Projects</a>
       </nav>
+      <p>
+        <% @quotes = ['"Computers are useless.  They can only give you answers." -Pablo Picasso', '"That’s what’s cool about working with computers.  They don’t argue, they remember everything, and they don’t drink all your beer." -Paul Leary', '"If the automobile had followed the same development cycle as the computer, a Rolls-Royce would today cost $100, get a million miles per gallon, and explode once a year, killing everyone inside." -Robert X. Cringely', '"Computers are getting smarter all the time.  Scientists tell us that soon they will be able to talk to us.  (And by they, I mean computers.  I doubt scientists will ever be able to talk to us.)" -Dave Barry', '"The city’s central computer told you?  R2D2, you know better than to trust a strange computer!" -C3PO', '"Never trust a computer you can’t throw out a window." -Steve Wozniak', '"The question of whether computers can think is like the question of whether submarines can swim." -Edsger W. Dijkstra', '"There are two major products that come out of Berkeley: LSD and UNIX.  We don’t believe this to be a coincidence." -Jeremy S. Anderson', '"There are only two industries that refer to their customers as users." -Edward Tufte', '"Most of you are familiar with the virtues of a programmer.  There are three, of course: laziness, impatience, and hubris." -Larry Wall']%>
+        <%= @quotes.sample %>
+      </p>
       <div id="follow">
         <i>follow me:
         <a href="http://twitter.com/bumbbles21">Twitter</a>
@@ -27,9 +28,9 @@
       </div>
     </div>
 
-    <div class="footer">
+    <footer>
       <%= "Blog of Awesome | copyright #{Time.now.year}"%>
-    </div>
+    </footer>
 
   </div>
 </html>

@@ -9,22 +9,22 @@ class MySite < Sinatra::Base
 
   get "/index" do
     @title = "Home | Awesome Website of Awesomeness"
-    erb :index
+    erb :"/index"
   end
 
   get "/about_me" do
     @title = "About Me | Awesome Website of Awesomeness"
-    erb :about_me
+    erb :"/about_me"
   end
 
   get "/projects" do
     @title = "Projects | Awesome Website of Awesomeness"
-    erb :projects
+    erb :"/projects"
   end
 
   get "/blog" do
     @title = "Blog | Awesome Website of Awesomeness"
-    erb :blog
+    erb :"/blog"
   end
 
   get "/blog/girls_cant_do_math" do

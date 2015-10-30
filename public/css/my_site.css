@@ -46,18 +46,20 @@ img {
 
 .sidebar {
   background-color:#C7D1D4;
-  display: inline;
-  float: left;
+  position:absolute;
+  right: 30;
   width: 200;
   margin: 10;
   border:5px solid #7F5720;
   padding: 10;
 }
 
-.footer {
+footer {
   border:5px solid #7F5720;
   color:#4B361A;
   background-color:#C7D1D4;
+  bottom: 0;
+  right:30;
   padding:10px 20px 15px;
   margin: 10px;
   display: inline-block;
@@ -102,4 +104,41 @@ td{
   text-decoration: none;
   display: flex;
   padding:5
+}
+
+.blog_end {
+  background-color:#C7D1D4;
+  display: inline;
+  float: left;
+  width: 660;
+  margin: 10;
+  border:5px solid #7F5720;
+  padding: 10;
+}
+
+article, aside {
+  padding:25;
+   background-color:#C7D1D4;
+}
+
+h3 {
+  background-color:#C7D1D4;
+  display: inline;
+}
+
+time {
+  margin-left:450;
+  background-color:#C7D1D4;
+}
+
+.blog_img {
+  text-align: center;
+  background-color:#C7D1D4;
+}
+
+.check_back {
+  background-color:#C7D1D4;
+  text-align:center;
+  padding:30;
+  margin-bottom:210;
 }
